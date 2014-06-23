@@ -1,0 +1,8 @@
+.svn
+target
+**/nb-configuration.xml
+**/nbactions.xml
+/LTVKeywordExtractorCore/testdata
+/LTVKeywordExtractorCore/testdata2
+/LTVKeywordExtractorCore/LTVUtils.zip
+/LTVKeywordExtractorCore/result

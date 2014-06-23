@@ -1,0 +1,71 @@
+{
+    "swaggerVersion": "1.2",
+    "basePath": "http://ner2.lmcloud.vse.cz:8080/LTVKeywordExtractor/api/v1",
+    "authorizations": {},
+    "apis": [
+        {
+            "path": "/{lang}/keywords",
+            "operations": [
+                {
+                    "method": "POST",
+                    "summary": "This method loads a posted SRT or ASR content and returns 20 most relevant keywords within the XML result.",
+                    "notes": "Curl example: curl -X POST -H \"userKey: {userKey}\" -H \"Content-Type: {contentType}\" --data-binary @path/to/file http://ner2.lmcloud.vse.cz:8080/LTVKeywordExtractor/api/v1/{lang}/keywords",
+                    "type": "string",
+                    "nickname": "keywords",
+                    "produces": ["application/xml"],
+                    "consumes": ["application/xml", "text/plain"],
+                    "parameters": [
+                        {
+                            "name": "lang",
+                            "description": "The used language. Available languages are: English, German and Dutch.",
+                            "required": true,
+                            "type": "string",
+                            "paramType": "path",
+                            "enum": ["en", "de", "nl"]
+                        },
+                        {
+                            "name": "userKey",
+                            "description": "API Key for Keyword extraction tool",
+                            "required": true,
+                            "type": "string",
+                            "paramType": "header"
+                        },
+                        {
+                            "name": "body",
+                            "description": "ASR or SRT content",
+                            "required": true,
+                            "type": "string",
+                            "paramType": "body"
+                        }
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 200,
+                            "message": "OK"
+                        },
+                        {
+                            "code": 400,
+                            "message": "Bad Request: Maybe the API Key is invalid or the SRT or ASR content is wrong or there is another server problem"
+                        },
+                        {
+                            "code": 401,
+                            "message": "Unauthorized: Maybe the API Key is missing"
+                        },
+                        {
+                            "code": 404,
+                            "message": "Not Found: Maybe the language parameter is bad"
+                        },
+                        {
+                            "code": 405,
+                            "message": "Method Not Allowed"
+                        },
+                        {
+                            "code": 415,
+                            "message": "Unsupported Media Type"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
