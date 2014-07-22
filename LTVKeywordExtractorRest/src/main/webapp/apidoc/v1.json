@@ -8,7 +8,7 @@
             "operations": [
                 {
                     "method": "POST",
-                    "summary": "This method loads a posted SRT or ASR content and returns 20 most relevant keywords within the XML result.",
+                    "summary": "This method loads a posted ASR, SRT, STL or XML+OAI-PMH content and returns 20 most relevant keywords within the XML result.",
                     "notes": "Curl example: curl -X POST -H \"userKey: {userKey}\" -H \"Content-Type: {contentType}\" --data-binary @path/to/file http://ner2.lmcloud.vse.cz:8080/LTVKeywordExtractor/api/v1/{lang}/keywords",
                     "type": "string",
                     "nickname": "keywords",
@@ -32,7 +32,7 @@
                         },
                         {
                             "name": "body",
-                            "description": "ASR or SRT content",
+                            "description": "ASR, SRT, STL or XML+OAI-PMH content. For ASR and XML+OAI-PMH, use application/xml content-type. For SRT and STL, use text/plain content-type.",
                             "required": true,
                             "type": "string",
                             "paramType": "body"
@@ -45,7 +45,7 @@
                         },
                         {
                             "code": 400,
-                            "message": "Bad Request: Maybe the API Key is invalid or the SRT or ASR content is wrong or there is another server problem"
+                            "message": "Bad Request: Maybe the API Key is invalid or the ASR, SRT, STL or XML+OAI-PMH content is wrong or there is another server problem"
                         },
                         {
                             "code": 401,

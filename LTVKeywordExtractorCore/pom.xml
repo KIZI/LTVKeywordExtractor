@@ -30,6 +30,11 @@
             <artifactId>commons-io</artifactId>
             <version>2.3</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.riccardove.easyjasub</groupId>
+            <artifactId>subtitleConvert</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
     
     <build>
@@ -51,6 +56,9 @@
                                 <arg>-deprecation</arg>
                                 <arg>-feature</arg>
                             </args>
+                            <jvmArgs>
+                                <jvmArg>-Dfile.encoding=UTF-8</jvmArg>
+                            </jvmArgs>
                         </configuration>
                     </execution>
                 </executions>

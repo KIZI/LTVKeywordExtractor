@@ -1,17 +1,10 @@
 package eu.linkedtv.keywords.extractor.core
 
-import eu.linkedtv.keywords.extractor.core.impl.AsrSourceFile
-import eu.linkedtv.keywords.extractor.core.impl.KeywordExtractorImpl
-import eu.linkedtv.keywords.extractor.core.impl.SrtSourceFile
-import eu.linkedtv.keywords.extractor.core.impl.TokenizerStringBuilderImpl
-import eu.linkedtv.utils.asr.AsrTranscript
-import java.io.File
-import java.io.FileInputStream
-import org.apache.commons.io.FileUtils
-
 object Test {
 
-  def main(args:Array[String]) = {
+  def main(args:Array[String]) : Unit = {
+//    val a = new StlSourceFile("neco", KELangGerman, new FileInputStream("testdata2/Lecorce_du_vent.srt"))
+//  a.tokenizer.tokens foreach (x => println(x.word))
 //    val teacher = SourceFile.learn(new KeywordExtractorImpl("4330f873ac422453698d888b15c4245c555d62fd"), TokenizerStringBuilderImpl) _
 //    val resulter = SourceFile.result(new KeywordExtractorImpl("4330f873ac422453698d888b15c4245c555d62fd")) _
 //    
