@@ -53,11 +53,15 @@ object SrtSourceFile {
 
   object HasEndPunct {
     def unapply(str: String) = {
-      val end = str.last
-      if (end == '.' || end == '!' || end == '?')
-        true
-      else
+      if (str.isEmpty)
         false
+      else {
+        val end = str.last
+        if (end == '.' || end == '!' || end == '?')
+          true
+        else
+          false
+      }
     }
   }
 
