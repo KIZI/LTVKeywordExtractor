@@ -6,3 +6,5 @@ target
 /LTVKeywordExtractorCore/testdata2
 /LTVKeywordExtractorCore/LTVUtils.zip
 /LTVKeywordExtractorCore/result
+.idea/
+*.iml

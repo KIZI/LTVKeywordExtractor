@@ -20,7 +20,7 @@ class KeywordExtractorImpl(accessKey : String) extends KeywordExtractor {
 
 //  private val userName = "test"
 //  private val password = "heslo"
-  private val endpointUrl = "https://ner.vse.cz/KeywordExtraction/rest/v2"
+  private val endpointUrl = "http://localhost:8088/LTVKeywords/rest/v2"
 //    private val endpointUrl = "http://localhost:8080/rest/v2"
   private val endpoint = ClientBuilder.newClient.target(endpointUrl)
 //  private lazy val accessKey = endpoint

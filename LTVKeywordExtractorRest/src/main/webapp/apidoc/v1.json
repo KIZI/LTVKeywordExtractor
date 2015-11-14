@@ -1,6 +1,6 @@
 {
     "swaggerVersion": "1.2",
-    "basePath": "http://ner2.lmcloud.vse.cz:8080/LTVKeywordExtractor/api/v1",
+    "basePath": "/LTVKeywordExtractor/api/v1",
     "authorizations": {},
     "apis": [
         {

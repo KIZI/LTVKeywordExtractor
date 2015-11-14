@@ -14,6 +14,6 @@
     },
     "info": {
         "title": "LTV Keyword Extractor",
-        "description": "This Web Service is a middleware between LinkedTV and KeywordExtractor applications. The REST API [1] is able to load any ASR, SRT, STL or XML+OAI-PMH content, process it, and return a XML result about keywords occurring in some particular video. Only an existed user account within the KeywordExtractor application [2, 3] is required to use this easy API.<br /><br />[1] <a href=\"http://ner2.lmcloud.vse.cz:8080/LTVKeywordExtractor/api/v1\">LTV Keyword Extractor API - middleware</a><br />[2] <a href=\"https://ner.vse.cz/KeywordExtraction/developers.html\">Keyword extraction tool - Developer Documentation</a><br />[3] <a href=\"https://ner.vse.cz/KeywordExtraction/app/index\">Keyword extraction tool - User Interface</a>"
+        "description": "This Web Service is a middleware between LinkedTV and KeywordExtractor applications. The REST API [1] is able to load any ASR, SRT, STL or XML+OAI-PMH content, process it, and return a XML result about keywords occurring in some particular video. Only an existed user account within the KeywordExtractor application [2, 3] is required to use this easy API.<br /><br />[1] <a href=\"/LTVKeywordExtractor/api/v1\">LTV Keyword Extractor API - middleware</a><br />[2] <a href=\"/LTVKeywords/developers.html\">Keyword extraction tool - Developer Documentation</a><br />[3] <a href=\"/LTVKeywords/app/index\">Keyword extraction tool - User Interface</a>"
     }
 }
